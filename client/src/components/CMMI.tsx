@@ -1,10 +1,10 @@
 export default function CMMI() {
   const skills = [
+    { name: "نظم المعلومات الجغرافية والتحليلات المكانية", percentage: 95 },
     { name: "تطوير تطبيقات برمجية", percentage: 93 },
     { name: "استشارات وتحليل أنظمة", percentage: 90 },
     { name: "إدارة شبكات وأنظمة تشغيل", percentage: 85 },
-    { name: "أمن معلومات", percentage: 80 },
-    { name: "استضافة بيانات وقواعد البيانات", percentage: 75 }
+    { name: "أمن معلومات", percentage: 80 }
   ];
 
   return (

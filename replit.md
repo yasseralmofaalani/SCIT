@@ -87,10 +87,36 @@ The application is configured for deployment on Replit with the following setup:
 ```
 Changelog:
 - June 27, 2025. Initial setup
+- June 27, 2025. Added Geographic Information Systems (GIS) service as requested
+- June 27, 2025. Added bilingual support (Arabic/English) with language switcher
+- June 27, 2025. Updated SCIT positioned as #1 GIS company in Syria
+- June 27, 2025. Enhanced services section with detailed descriptions
 ```
+
+## Recent Changes
+
+### Geographic Information Systems Integration
+- Added GIS as a fourth core service highlighting SCIT's position as the #1 GIS company in Syria
+- Updated CMMI skills section to include GIS and spatial analytics at 95% proficiency
+- Enhanced services layout to accommodate four service cards in responsive grid
+
+### Bilingual Support Implementation
+- Created comprehensive translation system supporting Arabic (RTL) and English (LTR)
+- Added language switcher in header with globe icon
+- Implemented dynamic text direction and layout adjustments
+- All major sections now support both languages with professional translations
+
+### Enhanced Company Positioning
+- Emphasized SCIT's leadership in GIS and spatial analytics
+- Updated skill metrics to reflect GIS expertise
+- Maintained IBM Carbon design system consistency
 
 ## User Preferences
 
 ```
 Preferred communication style: Simple, everyday language.
+Requested features:
+- Geographic Information Systems as core service
+- Company positioning as #1 GIS provider in Syria
+- Bilingual Arabic/English support
 ```

@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function Stats() {
   const [counters, setCounters] = useState({ years: 0, clients: 0, projects: 0 });
   const [hasAnimated, setHasAnimated] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -57,19 +59,19 @@ export default function Stats() {
             <div className="text-5xl hthelios-heavy text-ibm-blue-60 mb-4 counter-animate">
               {counters.years}
             </div>
-            <h3 className="text-xl hthelios-bold text-ibm-gray-100">سنة خبرة</h3>
+            <h3 className="text-xl hthelios-bold text-ibm-gray-100">{t('stats.years')}</h3>
           </div>
           <div className="p-8">
             <div className="text-5xl hthelios-heavy text-ibm-blue-60 mb-4 counter-animate">
               {counters.clients}
             </div>
-            <h3 className="text-xl hthelios-bold text-ibm-gray-100">عميل</h3>
+            <h3 className="text-xl hthelios-bold text-ibm-gray-100">{t('stats.clients')}</h3>
           </div>
           <div className="p-8">
             <div className="text-5xl hthelios-heavy text-ibm-blue-60 mb-4 counter-animate">
               {counters.projects}
             </div>
-            <h3 className="text-xl hthelios-bold text-ibm-gray-100">مشروع</h3>
+            <h3 className="text-xl hthelios-bold text-ibm-gray-100">{t('stats.projects')}</h3>
           </div>
         </div>
       </div>
