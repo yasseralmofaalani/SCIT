@@ -18,23 +18,25 @@ export default function Hero() {
   };
 
   return (
-    <section id="home" className="hero-bg text-white py-20">
-      <div className="container mx-auto px-4 text-center">
-        <h1 className="text-5xl md:text-6xl hthelios-heavy mb-6">{t('hero.title')}</h1>
-        <p className="text-xl md:text-2xl mb-8 opacity-90 hthelios-bold">{t('hero.subtitle')}</p>
-        <div className="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-reverse md:space-x-6">
-          <button 
-            onClick={scrollToContact}
-            className="bg-white text-ibm-blue-60 px-8 py-4 rounded-lg hthelios-black hover:bg-ibm-blue-20 transition-colors"
-          >
-            {t('hero.contact')}
-          </button>
-          <button 
-            onClick={scrollToProjects}
-            className="border-2 border-white text-white px-8 py-4 rounded-lg hthelios-bold hover:bg-white hover:text-ibm-blue-60 transition-colors"
-          >
-            {t('hero.projects')}
-          </button>
+    <section id="home" className="bg-gradient-to-br from-ibm-blue-60 to-ibm-blue-80 text-ibm-white py-24 md:py-32">
+      <div className="container mx-auto px-6 text-center">
+        <div className="max-w-4xl mx-auto">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl tajawal-black mb-6 leading-tight">{t('hero.title')}</h1>
+          <p className="text-lg md:text-xl lg:text-2xl mb-10 opacity-95 tajawal-medium max-w-3xl mx-auto leading-relaxed">{t('hero.subtitle')}</p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4 md:gap-6">
+            <button
+              onClick={scrollToContact}
+              className="bg-ibm-white text-ibm-blue-60 px-8 py-4 rounded-md tajawal-bold hover:bg-ibm-gray-10 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            >
+              {t('hero.contact')}
+            </button>
+            <button
+              onClick={scrollToProjects}
+              className="border-2 border-ibm-white text-ibm-white px-8 py-4 rounded-md tajawal-bold hover:bg-ibm-white hover:text-ibm-blue-60 transition-all duration-300 transform hover:scale-105"
+            >
+              {t('hero.projects')}
+            </button>
+          </div>
         </div>
       </div>
     </section>

@@ -52,26 +52,26 @@ export default function Stats() {
   };
 
   return (
-    <section ref={sectionRef} className="bg-white py-16">
-      <div className="container mx-auto px-4">
+    <section ref={sectionRef} className="bg-ibm-gray-10 py-20">
+      <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="p-8">
-            <div className="text-5xl hthelios-heavy text-ibm-blue-60 mb-4 counter-animate">
+          <div className="p-8 bg-ibm-white rounded-lg shadow-sm border border-ibm-gray-20 hover:shadow-md transition-shadow">
+            <div className="text-5xl md:text-6xl tajawal-black text-ibm-blue-60 mb-4 counter-animate">
               {counters.years}
             </div>
-            <h3 className="text-xl hthelios-bold text-ibm-gray-100">{t('stats.years')}</h3>
+            <h3 className="text-lg tajawal-bold text-ibm-gray-70">{t('stats.years')}</h3>
           </div>
-          <div className="p-8">
-            <div className="text-5xl hthelios-heavy text-ibm-blue-60 mb-4 counter-animate">
+          <div className="p-8 bg-ibm-white rounded-lg shadow-sm border border-ibm-gray-20 hover:shadow-md transition-shadow">
+            <div className="text-5xl md:text-6xl tajawal-black text-ibm-blue-60 mb-4 counter-animate">
               {counters.clients}
             </div>
-            <h3 className="text-xl hthelios-bold text-ibm-gray-100">{t('stats.clients')}</h3>
+            <h3 className="text-lg tajawal-bold text-ibm-gray-70">{t('stats.clients')}</h3>
           </div>
-          <div className="p-8">
-            <div className="text-5xl hthelios-heavy text-ibm-blue-60 mb-4 counter-animate">
+          <div className="p-8 bg-ibm-white rounded-lg shadow-sm border border-ibm-gray-20 hover:shadow-md transition-shadow">
+            <div className="text-5xl md:text-6xl tajawal-black text-ibm-blue-60 mb-4 counter-animate">
               {counters.projects}
             </div>
-            <h3 className="text-xl hthelios-bold text-ibm-gray-100">{t('stats.projects')}</h3>
+            <h3 className="text-lg tajawal-bold text-ibm-gray-70">{t('stats.projects')}</h3>
           </div>
         </div>
       </div>

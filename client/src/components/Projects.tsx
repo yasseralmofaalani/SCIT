@@ -77,35 +77,35 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-ibm-gray-20">
-      <div className="container mx-auto px-4">
+    <section id="projects" className="py-24 bg-ibm-white">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl hthelios-heavy text-ibm-gray-100 mb-4">مشاريعنا</h2>
-          <p className="text-xl text-ibm-gray-60">معرض أعمالنا في مجال الحلول التقنية الحكومية</p>
+          <h2 className="text-3xl md:text-4xl tajawal-black text-ibm-gray-100 mb-4">مشاريعنا</h2>
+          <p className="text-lg md:text-xl text-ibm-gray-60 tajawal-regular">معرض أعمالنا في مجال الحلول التقنية الحكومية</p>
         </div>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {projects.map((project, index) => (
-            <div 
+            <div
               key={index}
-              className="project-card bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer group"
+              className="project-card bg-ibm-white rounded-lg shadow-sm border border-ibm-gray-20 overflow-hidden cursor-pointer group hover:shadow-lg hover:border-ibm-blue-30 transition-all duration-300"
               onClick={() => window.open(project.url, '_blank')}
             >
               <div className="relative overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
+                <img
+                  src={project.image}
+                  alt={project.title}
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-300 flex items-center justify-center">
-                  <ExternalLink className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" size={24} />
+                <div className="absolute inset-0 bg-ibm-blue-60 bg-opacity-0 group-hover:bg-opacity-10 transition-all duration-300 flex items-center justify-center">
+                  <ExternalLink className="text-ibm-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" size={24} />
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-lg hthelios-bold text-ibm-blue-60 mb-2 group-hover:text-ibm-blue-50 transition-colors">
+                <h3 className="text-lg tajawal-bold text-ibm-blue-60 mb-3 group-hover:text-ibm-blue-70 transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-ibm-gray-60 text-sm leading-relaxed">
+                <p className="text-ibm-gray-60 text-sm leading-relaxed tajawal-regular">
                   {project.description}
                 </p>
               </div>

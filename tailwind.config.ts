@@ -61,13 +61,31 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
-        // IBM Carbon colors
+        // IBM Carbon colors - Extended Palette
+        'ibm-blue-100': 'var(--ibm-blue-100)',
+        'ibm-blue-90': 'var(--ibm-blue-90)',
+        'ibm-blue-80': 'var(--ibm-blue-80)',
+        'ibm-blue-70': 'var(--ibm-blue-70)',
         'ibm-blue-60': 'var(--ibm-blue-60)',
         'ibm-blue-50': 'var(--ibm-blue-50)',
+        'ibm-blue-40': 'var(--ibm-blue-40)',
+        'ibm-blue-30': 'var(--ibm-blue-30)',
         'ibm-blue-20': 'var(--ibm-blue-20)',
+        'ibm-blue-10': 'var(--ibm-blue-10)',
+
         'ibm-gray-100': 'var(--ibm-gray-100)',
+        'ibm-gray-90': 'var(--ibm-gray-90)',
+        'ibm-gray-80': 'var(--ibm-gray-80)',
+        'ibm-gray-70': 'var(--ibm-gray-70)',
         'ibm-gray-60': 'var(--ibm-gray-60)',
+        'ibm-gray-50': 'var(--ibm-gray-50)',
+        'ibm-gray-40': 'var(--ibm-gray-40)',
+        'ibm-gray-30': 'var(--ibm-gray-30)',
         'ibm-gray-20': 'var(--ibm-gray-20)',
+        'ibm-gray-10': 'var(--ibm-gray-10)',
+
+        'ibm-white': 'var(--ibm-white)',
+        'ibm-black': 'var(--ibm-black)',
       },
       keyframes: {
         "accordion-down": {
@@ -92,7 +110,17 @@ export default {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        'hthelios': ['HTHeliopolis', 'sans-serif'],
+        'tajawal': ['Tajawal', 'sans-serif'],
+        'sans': ['Tajawal', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      fontWeight: {
+        'light': '400',
+        'normal': '500',
+        'medium': '600',
+        'semibold': '700',
+        'bold': '700',
+        'extrabold': '800',
+        'black': '900',
       },
     },
   },

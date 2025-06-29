@@ -2,26 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  font-family: 'HTHeliopolis';
-  src: url('data:font/truetype;charset=utf-8;base64,') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HTHeliopolis';
-  src: url('data:font/truetype;charset=utf-8;base64,') format('truetype');
-  font-weight: 800;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'HTHeliopolis';
-  src: url('data:font/truetype;charset=utf-8;base64,') format('truetype');
-  font-weight: 900;
-  font-display: swap;
-}
+/* Tajawal font is loaded from Google Fonts in index.html */
 
 :root {
   --background: hsl(0, 0%, 100%);
@@ -45,35 +26,53 @@
   --ring: hsl(0, 0%, 8.6%);
   --radius: 0.5rem;
   
-  /* IBM Carbon Colors */
+  /* IBM Carbon Colors - Extended Palette */
+  --ibm-blue-100: hsl(220, 68%, 18%);
+  --ibm-blue-90: hsl(220, 68%, 22%);
+  --ibm-blue-80: hsl(220, 69%, 26%);
+  --ibm-blue-70: hsl(220, 69%, 32%);
   --ibm-blue-60: hsl(218, 100%, 53%);
   --ibm-blue-50: hsl(218, 100%, 62%);
+  --ibm-blue-40: hsl(218, 100%, 70%);
+  --ibm-blue-30: hsl(218, 100%, 78%);
   --ibm-blue-20: hsl(218, 100%, 88%);
+  --ibm-blue-10: hsl(218, 100%, 95%);
+
   --ibm-gray-100: hsl(0, 0%, 8.6%);
+  --ibm-gray-90: hsl(0, 0%, 15.7%);
+  --ibm-gray-80: hsl(0, 0%, 22.7%);
+  --ibm-gray-70: hsl(0, 0%, 29.8%);
   --ibm-gray-60: hsl(0, 0%, 43.5%);
+  --ibm-gray-50: hsl(0, 0%, 56.9%);
+  --ibm-gray-40: hsl(0, 0%, 69.8%);
+  --ibm-gray-30: hsl(0, 0%, 78.4%);
   --ibm-gray-20: hsl(0, 0%, 87.8%);
+  --ibm-gray-10: hsl(0, 0%, 96.1%);
+
+  --ibm-white: hsl(0, 0%, 100%);
+  --ibm-black: hsl(0, 0%, 0%);
 }
 
 .dark {
-  --background: hsl(240, 10%, 3.9%);
-  --foreground: hsl(0, 0%, 98%);
-  --muted: hsl(240, 3.7%, 15.9%);
-  --muted-foreground: hsl(240, 5%, 64.9%);
-  --popover: hsl(240, 10%, 3.9%);
-  --popover-foreground: hsl(0, 0%, 98%);
-  --card: hsl(240, 10%, 3.9%);
-  --card-foreground: hsl(0, 0%, 98%);
-  --border: hsl(240, 3.7%, 15.9%);
-  --input: hsl(240, 3.7%, 15.9%);
-  --primary: hsl(218, 100%, 53%);
-  --primary-foreground: hsl(220, 82%, 98%);
-  --secondary: hsl(240, 3.7%, 15.9%);
-  --secondary-foreground: hsl(0, 0%, 98%);
-  --accent: hsl(240, 3.7%, 15.9%);
-  --accent-foreground: hsl(0, 0%, 98%);
+  --background: var(--ibm-gray-100);
+  --foreground: var(--ibm-gray-10);
+  --muted: var(--ibm-gray-90);
+  --muted-foreground: var(--ibm-gray-40);
+  --popover: var(--ibm-gray-90);
+  --popover-foreground: var(--ibm-gray-10);
+  --card: var(--ibm-gray-90);
+  --card-foreground: var(--ibm-gray-10);
+  --border: var(--ibm-gray-80);
+  --input: var(--ibm-gray-80);
+  --primary: var(--ibm-blue-60);
+  --primary-foreground: var(--ibm-white);
+  --secondary: var(--ibm-gray-80);
+  --secondary-foreground: var(--ibm-gray-10);
+  --accent: var(--ibm-gray-80);
+  --accent-foreground: var(--ibm-gray-10);
   --destructive: hsl(0, 62.8%, 30.6%);
-  --destructive-foreground: hsl(0, 0%, 98%);
-  --ring: hsl(240, 4.9%, 83.9%);
+  --destructive-foreground: var(--ibm-white);
+  --ring: var(--ibm-gray-40);
   --radius: 0.5rem;
 }
 
@@ -84,7 +83,8 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
-    font-family: 'HTHeliopolis', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Tajawal', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
   }
 
   html {
@@ -93,19 +93,34 @@
 }
 
 @layer components {
-  .hthelios-bold {
-    font-family: 'HTHeliopolis', sans-serif;
+  .tajawal-light {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 400;
+  }
+
+  .tajawal-regular {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+  }
+
+  .tajawal-medium {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 600;
+  }
+
+  .tajawal-bold {
+    font-family: 'Tajawal', sans-serif;
     font-weight: 700;
   }
 
-  .hthelios-heavy {
-    font-family: 'HTHeliopolis', sans-serif;
-    font-weight: 900;
+  .tajawal-heavy {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 800;
   }
 
-  .hthelios-black {
-    font-family: 'HTHeliopolis', sans-serif;
-    font-weight: 800;
+  .tajawal-black {
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 900;
   }
 
   .project-card {
@@ -118,7 +133,7 @@
   }
 
   .hero-bg {
-    background: linear-gradient(135deg, var(--ibm-blue-60) 0%, var(--ibm-blue-50) 100%);
+    background: linear-gradient(135deg, var(--ibm-blue-60) 0%, var(--ibm-blue-80) 100%);
   }
 
   .counter-animate {
